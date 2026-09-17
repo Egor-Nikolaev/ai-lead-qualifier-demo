@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --color-ink: #0a0a0f;
+  --color-ink-2: #1d1d1f;
+  --color-ink-3: #424245;
+  --color-ink-4: #6e6e73;
+  --color-ink-5: #86868b;
+
+  --color-canvas: #ffffff;
+  --color-canvas-2: #fbfbfd;
+  --color-canvas-3: #f5f5f7;
+  --color-canvas-4: #e8e8ed;
+
+  --color-line: rgba(0, 0, 0, 0.08);
+  --color-line-strong: rgba(0, 0, 0, 0.14);
+
+  --color-accent: #0071e3;
+  --color-accent-hover: #0077ed;
+
+  --color-good: #34a853;
+  --color-warn: #ff9500;
+  --color-bad: #ff3b30;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 17px;
+    line-height: 1.47;
+    letter-spacing: -0.011em;
+  }
+
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-canvas);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+
+  .hairline { border-color: var(--color-line); }
+  .hairline-strong { border-color: var(--color-line-strong); }
+
+  .display-1 {
+    font-size: clamp(48px, 6vw, 80px);
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+    font-weight: 600;
+  }
+  .display-2 {
+    font-size: clamp(36px, 4.5vw, 56px);
+    line-height: 1.08;
+    letter-spacing: -0.028em;
+    font-weight: 600;
+  }
+  .headline {
+    font-size: clamp(24px, 2.2vw, 32px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+  .eyebrow {
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-ink-4);
+  }
+}

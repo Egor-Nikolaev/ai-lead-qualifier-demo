@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ai-lead-qualifier-demo",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["dev", "--host"],
+      "port": 5173
+    }
+  ]
+}
