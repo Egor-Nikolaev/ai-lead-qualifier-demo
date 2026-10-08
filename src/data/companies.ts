@@ -66,12 +66,12 @@ export interface CompanyResult {
 export const COMPANIES: CompanyResult[] = [
   {
     id: 'yclients',
-    name: 'YClients',
+    name: 'СервисДеск',
     website: 'yclients.com',
     industry: 'SaaS / Beauty tech',
     logo: 'Y',
     enrichment: {
-      legal_name: 'ООО «Уай-клиентс»',
+      legal_name: 'ООО «СервисДеск»',
       inn: '7728848223',
       revenue_rub: 4_100_000_000,
       employees: 620,
@@ -86,7 +86,7 @@ export const COMPANIES: CompanyResult[] = [
         'Announced expansion into 3 new verticals',
       ],
       media_mentions: [
-        'RBC — YClients invests 800M ₽ in AI-driven scheduling',
+        'RBC — СервисДеск invests 800M ₽ in AI-driven scheduling',
         'vc.ru — case study of Sber-owned SaaS growth',
       ],
       confidence: 'high',
@@ -125,20 +125,20 @@ export const COMPANIES: CompanyResult[] = [
     timing: {
       enrichment_ms: 58_240,
       scoring_ms: 24_180,
-      cost_usd: 0.128,
+      cost_usd: 0.048,
       tokens_in: 6420,
       tokens_out: 1180,
-      model: 'claude-sonnet-4.6 via OpenRouter',
+      model: 'gpt-4o-2024-08-06 via OpenAI API',
     },
   },
   {
     id: 'ozon',
-    name: 'Ozon',
+    name: 'МаркетЛайн',
     website: 'ozon.ru',
     industry: 'E-commerce / Marketplace',
     logo: 'O',
     enrichment: {
-      legal_name: 'ООО «Интернет решения»',
+      legal_name: 'ООО «МаркетЛайн»',
       inn: '7704217370',
       revenue_rub: 424_000_000_000,
       employees: 33_000,
@@ -146,15 +146,15 @@ export const COMPANIES: CompanyResult[] = [
       key_person: 'Александр Шульгин',
       key_person_role: 'CEO',
       summary:
-        'One of the two dominant Russian marketplaces. Publicly traded (MOEX). Fintech arm Ozon Bank grew 3x in 2025. Currently pushing sub-brands Ozon Fresh and Ozon Travel as standalone products.',
+        'One of the two dominant Russian marketplaces. Publicly traded (MOEX). Fintech arm МаркетЛайн Bank grew 3x in 2025. Currently pushing sub-brands МаркетЛайн Fresh and МаркетЛайн Travel as standalone products.',
       demand_signals: [
-        'Ozon Fresh launched dedicated marketing team in Q1 2026',
-        'Job posts for Head of Brand at Ozon Bank',
+        'МаркетЛайн Fresh launched dedicated marketing team in Q1 2026',
+        'Job posts for Head of Brand at МаркетЛайн Bank',
         'Media coverage on planned super-app consolidation',
       ],
       media_mentions: [
-        'Vedomosti — Ozon Bank profit up 218% YoY',
-        'RBC — Ozon Travel gains 12% market share',
+        'Vedomosti — МаркетЛайн Bank profit up 218% YoY',
+        'RBC — МаркетЛайн Travel gains 12% market share',
       ],
       confidence: 'high',
     },
@@ -183,15 +183,15 @@ export const COMPANIES: CompanyResult[] = [
     followup: {
       subject: 'Sub-brand architecture: Fresh, Bank, Travel',
       body:
-        'Александр, здравствуйте.\n\nПишу коротко и по делу. Мы видим три отдельных продуктовых направления Ozon, которые сейчас конкурируют за внимание внутри одной оболочки: Fresh, Bank, Travel. У каждого свой tone of voice, но общая архитектура пока читается как один бренд.\n\nМы в ONY занимаемся такими историями (умеем разложить sub-brands без каннибализации основной марки). Готов прислать один тесно связанный кейс за 5 минут чтения.',
+        'Александр, здравствуйте.\n\nПишу коротко и по делу. Мы видим три отдельных продуктовых направления МаркетЛайн, которые сейчас конкурируют за внимание внутри одной оболочки: Fresh, Bank, Travel. У каждого свой tone of voice, но общая архитектура пока читается как один бренд.\n\nМы в ONY занимаемся такими историями (умеем разложить sub-brands без каннибализации основной марки). Готов прислать один тесно связанный кейс за 5 минут чтения.',
     },
     bizdev: {
       recommended_manager: 'Юлия Г.',
       priority: 'high',
       reason:
-        'BDM_OWNER_OVERRIDES закрепляет Ozon за Юлией. Load 2/4, есть возможность подключиться в новую сделку.',
+        'BDM_OWNER_OVERRIDES закрепляет МаркетЛайн за Юлией. Load 2/4, есть возможность подключиться в новую сделку.',
       reasoning: [
-        'Manual override: Ozon assigned to Юлия',
+        'Manual override: МаркетЛайн assigned to Юлия',
         'Manager load: 2/4',
         'Previous positive contact from Q2 (contract 2026-M-118)',
       ],
@@ -199,20 +199,20 @@ export const COMPANIES: CompanyResult[] = [
     timing: {
       enrichment_ms: 71_120,
       scoring_ms: 28_940,
-      cost_usd: 0.152,
+      cost_usd: 0.061,
       tokens_in: 8210,
       tokens_out: 1420,
-      model: 'claude-sonnet-4.6 via OpenRouter',
+      model: 'gpt-4o-2024-08-06 via OpenAI API',
     },
   },
   {
     id: 's7',
-    name: 'S7 Airlines',
+    name: 'АэроВектор',
     website: 's7.ru',
     industry: 'Aviation',
     logo: 'S',
     enrichment: {
-      legal_name: 'АО «Авиакомпания «Сибирь»',
+      legal_name: 'АО «АэроВектор»',
       inn: '5448100656',
       revenue_rub: 189_000_000_000,
       employees: 12_400,
@@ -271,20 +271,20 @@ export const COMPANIES: CompanyResult[] = [
     timing: {
       enrichment_ms: 62_800,
       scoring_ms: 26_100,
-      cost_usd: 0.134,
+      cost_usd: 0.052,
       tokens_in: 7020,
       tokens_out: 1240,
-      model: 'claude-sonnet-4.6 via OpenRouter',
+      model: 'gpt-4o-2024-08-06 via OpenAI API',
     },
   },
   {
     id: 'unknown-llc',
-    name: 'ООО «Меркурий-Торг»',
+    name: 'ООО «Вектор-Снаб»',
     website: 'merkurij-torg.example',
     industry: 'Wholesale / Unknown',
     logo: 'M',
     enrichment: {
-      legal_name: 'ООО «Меркурий-Торг»',
+      legal_name: 'ООО «Вектор-Снаб»',
       inn: '7728881029',
       revenue_rub: 42_000_000,
       employees: 8,
@@ -343,20 +343,20 @@ export const COMPANIES: CompanyResult[] = [
     timing: {
       enrichment_ms: 41_200,
       scoring_ms: 18_400,
-      cost_usd: 0.092,
+      cost_usd: 0.039,
       tokens_in: 4820,
       tokens_out: 720,
-      model: 'claude-sonnet-4.6 via OpenRouter',
+      model: 'gpt-4o-2024-08-06 via OpenAI API',
     },
   },
   {
     id: 'wildberries',
-    name: 'Wildberries',
+    name: 'ТоргПлатформа',
     website: 'wildberries.ru',
     industry: 'E-commerce / Marketplace',
     logo: 'W',
     enrichment: {
-      legal_name: 'ООО «Вайлдберриз»',
+      legal_name: 'ООО «ТоргПлатформа»',
       inn: '7721546864',
       revenue_rub: 2_500_000_000_000,
       employees: 90_000,
@@ -422,16 +422,16 @@ export const COMPANIES: CompanyResult[] = [
     timing: {
       enrichment_ms: 68_400,
       scoring_ms: 27_320,
-      cost_usd: 0.148,
+      cost_usd: 0.057,
       tokens_in: 7810,
       tokens_out: 1360,
-      model: 'claude-sonnet-4.6 via OpenRouter',
+      model: 'gpt-4o-2024-08-06 via OpenAI API',
     },
   },
   {
     id: 'identity-mismatch',
-    name: 'Аэромакс',
-    website: 'kronshtadt.ru',
+    name: 'СкайТех',
+    website: 'skytech-systems.ru',
     industry: 'Industrial / UAV',
     logo: 'A',
     enrichment: {
@@ -444,7 +444,7 @@ export const COMPANIES: CompanyResult[] = [
       key_person: '—',
       key_person_role: '—',
       summary:
-        'Identity mismatch. Perplexity returned data about ГК «Аэромакс» (Moscow, UAV holding), but the requesting domain kronshtadt.ru belongs to a different aerospace company. Enrichment halted, manual verification required.',
+        'Identity mismatch. SerpAPI returned data about ГК «СкайТех» (Moscow, UAV holding), but the requesting domain skytech-systems.ru belongs to a different aerospace company. Enrichment halted, manual verification required.',
       demand_signals: [],
       media_mentions: [],
       confidence: 'low',
@@ -458,7 +458,7 @@ export const COMPANIES: CompanyResult[] = [
       psychotype: 'Unknown.',
       red_flags: [
         {
-          text: 'Identity mismatch: expected Аэромакс (kronshtadt.ru), found different Аэромакс (aeromax-group.ru)',
+          text: 'Identity mismatch: expected СкайТех (skytech-systems.ru), found different СкайТех (aeromax-group.ru)',
           source: 'internal guard',
           date: '2026-09-11',
           severity: 'critical',
@@ -487,10 +487,10 @@ export const COMPANIES: CompanyResult[] = [
     timing: {
       enrichment_ms: 39_800,
       scoring_ms: 12_600,
-      cost_usd: 0.081,
+      cost_usd: 0.034,
       tokens_in: 4210,
       tokens_out: 640,
-      model: 'claude-sonnet-4.6 via OpenRouter',
+      model: 'gpt-4o-2024-08-06 via OpenAI API',
     },
   },
 ]
